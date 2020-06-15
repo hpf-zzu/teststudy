@@ -8,22 +8,37 @@ public class FizzBuzz {
         if(String.valueOf(number).contains("7")){
 
             String temp = "";
-            if(number % 3 == 0)
-                temp += "Fizz";
-            if(number % 7 == 0)
+            if(number % 3 == 0 && number % 7 == 0) {
+                temp += "FizzWhizz";
+                return temp;
+            }
+            if(number % 7 == 0) {
                 temp += "Whizz";
-            return temp;
+                return temp;
+            }
+            if(number % 3 == 0){
+                temp += "Fizz";
+                return temp;
+            }
         }
 
         if(String.valueOf(number).contains("5")){
-
             String temp = "";
-            if(number % 5 == 0)
-                temp += "Buzz";
-            if(number % 7 == 0)
+            if(number % 5 == 0 && number % 7 == 0) {
+                temp += "BuzzWhizz";
+                return temp;
+            }
+            if(number % 7 == 0) {
                 temp += "Whizz";
-            return temp;
+                return temp;
+            }
+            if(number % 5 == 0){
+                temp += "Buzz";
+                return temp;
+            }
+            return String.valueOf(number);
         }
+
 
         if(String.valueOf(number).contains("3")){
             return "Fizz";
