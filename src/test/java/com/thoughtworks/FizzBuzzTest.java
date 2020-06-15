@@ -40,6 +40,30 @@ public class FizzBuzzTest {
     }
 
     @Test
+    public void should_return_fizzBuzz_given_number_5() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        //when
+        String temp = fizzBuzz.say(5);
+
+        //then
+        assertEquals(temp,"Buzz");
+    }
+
+    @Test
+    public void should_return_fizzBuzz_given_number_42() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        //when
+        String temp = fizzBuzz.say(42);
+
+        //then
+        assertEquals(temp,"FizzWhizz");
+    }
+
+    @Test
     public void should_return_fizzBuzz_given_number_60() {
         //given
         FizzBuzz fizzBuzz = new FizzBuzz();
@@ -71,6 +95,15 @@ public class FizzBuzzTest {
         assertEquals(temp,"153");
 
     }
+    @Test
+    public void should_return_fizz_given_number_753(){
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        //when
+        String temp = fizzBuzz.say(753);
+        //then
+        assertEquals(temp,"Fizz");
 
+    }
 
 }
