@@ -16,6 +16,17 @@ public class FizzBuzzTest {
         //then
         assertEquals(temp,"Fizz");
     }
+    @Test
+    public void should_return_fizzBuzz_given_number_15() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        //when
+        String temp = fizzBuzz.say(15);
+
+        //then
+        assertEquals(temp,"FizzBuzz");
+    }
 
 
 

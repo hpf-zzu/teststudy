@@ -8,16 +8,20 @@ public class FizzBuzz {
             return "Fizz";
         }
 
-        String temp = "";
+        StringBuilder temp = new StringBuilder();
+
         if(number % 3 == 0){
-            return "Fizz";
+             temp.append("Fizz");
+        }
+        if(number % 5 == 0){
+             temp.append("Buzz");
+        }
+        if(number % 7 == 0){
+            temp.append("Whizz");
         }
 
-        if(number % 3 == 0 && number % 5 == 0 && number % 7 == 0){
-            return temp + "Fizz";
-        }
 
-        return String.valueOf(number);
+        return String.valueOf(temp);
 
     }
 }
