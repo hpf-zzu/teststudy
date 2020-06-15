@@ -4,6 +4,16 @@ public class FizzBuzz {
 
 
     public String say(int number) {
+        if(String.valueOf(number).contains("5")){
+
+            String temp = "";
+            if(number % 5 == 0)
+                temp += "Buzz";
+            if(number % 7 == 0)
+                temp += "Whizz";
+            return temp;
+        }
+
         if(String.valueOf(number).contains("3")){
             return "Fizz";
         }
